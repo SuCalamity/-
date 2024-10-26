@@ -1,4 +1,4 @@
---[[ hello very cool incognito / solara (mostly incognito because solara has most of these functions, just not all) script showcase!! 
+--[[ 
 pls dont steal source code :( 
 also join https://discord.gg/gYhqMRBeZV because yes    
 ]]
