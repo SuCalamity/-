@@ -1,5 +1,5 @@
---[[
-pls dont steal source code :(
+--[[ hello very cool incognito / solara (mostly incognito because solara has most of these functions, just not all) script showcase!! 
+pls dont steal source code :( 
 also join https://discord.gg/gYhqMRBeZV because yes    
 ]]
 --[[
@@ -403,20 +403,7 @@ end
 
 -- Main Functions
 function QueueGetIdentity()
-  task.wait(.1)
-  local messages = Log:GetLogHistory()
-  local message;
-  if not messages[#messages].message:match("Current identity is") then
-   for i = #messages, 1, -1 do
-    if messages[i].message:match("Current identity is %d") then
-     message = messages[i].message
-     break
-    end
-   end
-  else
-   message = messages[#messages].message:match('Current identity is %d'):gsub("Current identity is ", '')
-  end
-  Identity = tonumber(message)
+  return getidentity()
 end
 local Queue = {}
 Queue.__index = Queue
